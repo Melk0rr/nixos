@@ -7,5 +7,6 @@
     ./fastfetch.nix
     ./git.nix
     ./kitty.nix
+    ./packages.nix
   ];
 }
