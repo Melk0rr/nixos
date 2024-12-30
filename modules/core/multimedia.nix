@@ -6,6 +6,7 @@
     cmus
     freetube
     imv
+    krita
     lollypop
     mpv
   ];
