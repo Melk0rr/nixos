@@ -4,6 +4,15 @@
 {
   programs.fish = {
     enable = true;
+
+    # Interactive shell
+    interactiveShellInit = ''
+      fish_vi_key_bindings
+
+      function backup-file --argument filename
+        sudo cp $filename $filename.bak
+      end
+    '';
     
     # Abbr
     shellAbbrs = {
@@ -57,6 +66,14 @@
       # Python
       py = "python3";
     };
+  };
+
+  programs.zoxide = {
+    enable = true;
+    enableFishIntegration = true;
+    options = [
+      "--cmd cd"
+    ];
   };
 
   home.packages = (with pkgs; [
