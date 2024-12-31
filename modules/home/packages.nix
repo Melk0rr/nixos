@@ -3,6 +3,12 @@
 # Packages to install
 {
   home.packages = (with pkgs; [
+    # Shell
+    eza
+    fzf
+    yt-dlp
+    zoxide
+
     # Multimedia
     cmus			# console music player
     freetube			# foss youtube video player
