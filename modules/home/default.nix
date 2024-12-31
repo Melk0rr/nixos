@@ -5,6 +5,7 @@
   imports = [
     ./browser.nix
     ./fastfetch.nix
+    ./fish.nix
     ./git.nix
     ./kitty.nix
     ./packages.nix
