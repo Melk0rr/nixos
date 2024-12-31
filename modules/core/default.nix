@@ -12,7 +12,6 @@
     ./bootloader.nix
     ./hardware.nix
     ./locale.nix
-    ./multimedia.nix
     ./network.nix
     ./programs.nix
     ./security.nix
