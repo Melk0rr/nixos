@@ -1,18 +1,19 @@
-{ pkgs, ... }:
+{ config, pkgs, hostname, ... }:
 
 # Fish config
 {
-  home.packages = (with pkgs; [
-    fishPlugins.autopair
-    fishPlugins.fzf-fish
-    fishPlugins.pure
-  ]);
-  
   programs.fish = {
     enable = true;
     
     # Abbr
     shellAbbrs = {
+      # Nix
+      nix-switch = "sudo nixos-rebuild switch --flake ~/nixos-config#${hostname}";
+      nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#${hostname}";
+      nix-flake-update = "sudo nix flake update ~/nixos-config#";
+      nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage -d";
+
+      # System
       ff = "fastfetch";
       psa = "ps auxf";
       
@@ -57,4 +58,10 @@
       py = "python3";
     };
   };
+
+  home.packages = (with pkgs; [
+    fishPlugins.autopair
+    fishPlugins.fzf-fish
+    fishPlugins.pure
+  ]);
 }

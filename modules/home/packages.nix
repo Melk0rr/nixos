@@ -6,6 +6,7 @@
     # Shell
     eza
     fzf
+    oh-my-posh
     yt-dlp
     zoxide
 
