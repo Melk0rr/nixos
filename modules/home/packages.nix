@@ -4,16 +4,19 @@
 {
   home.packages = (with pkgs; [
     # Shell
-    eza
-    fzf
-    oh-my-posh
-    yt-dlp
-    zoxide
+    eza				# modern alternative to ls
+    fzf				# fuzzy search
+    oh-my-posh			# nice looking prompt
+    translate-shell		# translation from terminal
+    yt-dlp			# youtube content downloader
+    yazi			# terminal file explorer
+    zoxide			# modern alternative to cd
 
     # Multimedia
     cmus			# console music player
     freetube			# foss youtube video player
     imv				# lightweight image viewer
+    inkscape			# image and svg editor
     krita			# foss drawing app
     lollypop			# music player and library
     mpv				# lightweight video player
