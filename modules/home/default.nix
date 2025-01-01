@@ -8,6 +8,7 @@
     ./fish.nix
     ./git.nix
     ./kitty.nix
+    ./oh-my-posh
     ./packages.nix
   ];
 }
