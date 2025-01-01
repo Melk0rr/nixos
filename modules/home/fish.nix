@@ -9,6 +9,11 @@
     interactiveShellInit = ''
       fish_vi_key_bindings
 
+      set -gx EDITOR "nvim"
+      set -gx TERMINAL "kitty"
+ 
+      oh-my-posh init fish | source
+
       function backup-file --argument filename
         sudo cp $filename $filename.bak
       end
