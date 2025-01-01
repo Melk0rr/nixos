@@ -9,7 +9,7 @@
     themeFile = "Catppuccin-Mocha";
 
     font = {
-      name = "MesloLGL Nerd Font Mono";
+      name = "JetBrains Mono Nerd Font";
       size = 12;
     };
 
