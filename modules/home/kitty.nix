@@ -10,7 +10,7 @@
 
     font = {
       name = "JetBrains Mono Nerd Font";
-      size = 12;
+      size = 14;
     };
 
     settings = {
