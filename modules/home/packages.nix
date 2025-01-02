@@ -23,7 +23,9 @@
 
     # Utility
     localsend			# foss alternative to airdrop
+    mousam			# gtk weather app
     protonmail-desktop		# proton mail desktop client
     proton-pass			# proton pass desktop client
+    qalculate-gtk		# calculator using qalculate
   ]);
 }
