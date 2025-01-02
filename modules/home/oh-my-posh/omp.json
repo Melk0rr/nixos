@@ -12,10 +12,10 @@
             "debian": "\uf306",
             "windows": "\uf17a"
           },
-          "leading_diamond": "\ue3a2",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "leading_diamond": "\ue0b6",
+          "template": "{{ if .WSL }}WSL at {{ end }}{{.Icon}}",
           "foreground": "#CFAAF0",
-          "background": "#2A3F4E",
+          "background": "#43465A",
           "type": "os",
           "style": "diamond"
         },
@@ -23,10 +23,10 @@
           "properties": {
             "cache_duration": "none"
           },
-          "trailing_diamond": "\ue0bc",
+          "trailing_diamond": "\ue0b0",
           "template": " {{if .Root}}{{ .UserName }}💀{{ .HostName }} {{else}}{{ .UserName }}@{{ .HostName }} {{end}} ",
           "foreground": "#CFAAF0",
-          "background": "#2A3F4E",
+          "background": "#43465A",
           "type": "session",
           "style": "diamond",
           "foreground_templates": [
@@ -45,8 +45,8 @@
           },
           "trailing_diamond": "\ue0b4",
           "template": " {{ .Path }} ",
-          "foreground": "#AAD3F0",
-          "background": "#543A6B",
+          "foreground": "transparent",
+          "background": "#fab387",
           "type": "path",
           "style": "diamond"
         },
