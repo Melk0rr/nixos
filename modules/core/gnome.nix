@@ -17,6 +17,8 @@
   };
   environment.gnome.excludePackages = with pkgs; [ 
     geary
+    gnome-calculator
     gnome-tour
+    gnome-weather
   ];
 }
