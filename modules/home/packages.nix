@@ -23,6 +23,7 @@
 
     # Utility
     localsend			# foss alternative to airdrop
+    missioncenter		# gtk app to track system resources
     mousam			# gtk weather app
     protonmail-desktop		# proton mail desktop client
     proton-pass			# proton pass desktop client
