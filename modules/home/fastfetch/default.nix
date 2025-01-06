@@ -7,7 +7,7 @@
     enable = true;
     settings = {
       logo = {
-        width = 70;
+        source = ./nixos.svg;
         padding = {
           top = 3;
           left = 1;
@@ -15,6 +15,7 @@
         };
       };
       display = {
+	color = "magenta";
         separator = "   ";
       };
       modules = [
@@ -41,10 +42,12 @@
         {
           type = "disk";
           key = "  ";
+	  format = "{1} / {2}";
         }
         {
           type = "memory";
           key = "  󰑭";
+	  format = "{1} / {2}";
         }
         {
          type = "display";
@@ -76,7 +79,7 @@
         }
         {
           type = "kernel";
-          key = "  ";
+          key = "  ";
           format = "{1} {2}";
         }
         {
@@ -132,7 +135,7 @@
         }
         {
           type = "custom";
-          format = "  {#38}  {#37}  {#36}  {#35}  {#34}  {#33}  {#32}  {#31}  {#90} ";
+          format = " {#30}⬤ {#90}⬤ {#31}⬤ {#91}⬤ {#32}⬤ {#92}⬤ {#33}⬤ {#93}⬤ {#34}⬤ {#94}⬤ {#35}⬤ {#95}⬤ {#36}⬤ {#96}⬤ {#37}⬤ {#97}⬤ ";
         }
       ];
     };

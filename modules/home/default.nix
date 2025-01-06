@@ -4,7 +4,7 @@
 {
   imports = [
     ./browser.nix
-    ./fastfetch.nix
+    ./fastfetch
     ./fish.nix
     ./git.nix
     ./kitty.nix
