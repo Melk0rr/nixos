@@ -7,7 +7,7 @@
     enable = true;
     settings = {
       logo = {
-        source = ./nixos.svg;
+        source = ./nixos.png;
         padding = {
           top = 3;
           left = 1;
