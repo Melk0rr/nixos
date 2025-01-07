@@ -14,6 +14,7 @@
 
     # Dev
     clang			# C
+    pipx			# to install isolated python apps
     python3			# Python
     rustup			# Rust
     typescript-language-server  # Typescript
