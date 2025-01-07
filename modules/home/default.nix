@@ -11,5 +11,6 @@
     ./nvim.nix
     ./oh-my-posh
     ./packages.nix
+    ./yazi
   ];
 }
