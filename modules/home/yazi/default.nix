@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, username, ... }:
 
 # Yazi configuration
 {
@@ -17,18 +17,18 @@
       };
 
       preview = {
-        cache_dir = ~/.cache/yazi;
+        cache_dir = "/home/${username}/.cache/yazi";
       };
     };
 
     keymap = {
-      manager.prepend_keymap = {
+      manager.prepend_keymap = [
         { on = [ "l" ]; run = "plugin --sync smart-enter"; desc = "Enter the child directory, or open the file"; }
-      };
+      ];
     };
 
     plugins = {
-      smart-enter = ./smart-enter
+      smart-enter = ./plugins/smart-enter.yazi;
     };
   };
 }
