@@ -7,9 +7,10 @@
     enable = true;
     settings = {
       logo = {
+        width = 50;
         source = ./nixos.png;
         padding = {
-          top = 3;
+          top = 2;
           left = 1;
           right = 5;
         };
@@ -25,7 +26,7 @@
         }
         {
           type = "custom";
-          format = "┌─────────────── {#1}Hardware Information{#0} ───────────────┐";
+          format = "┌───────────────── {#1}Hardware Information{#0} ─────────────────┐";
         }
         {
           type = "host";
@@ -71,7 +72,7 @@
         }
         {
           type = "custom";
-          format = "├─────────────── {#1}Software Information{#0} ───────────────┤";
+          format = "├───────────────── {#1}Software Information{#0} ─────────────────┤";
         }
         {
           type = "os";
@@ -131,7 +132,7 @@
         }
         {
           type = "custom";
-          format = "└────────────────────────────────────────────────────┘";
+          format = "└────────────────────────────────────────────────────────┘";
         }
         {
           type = "custom";
