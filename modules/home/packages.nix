@@ -12,6 +12,12 @@
     yazi			# terminal file explorer
     zoxide			# modern alternative to cd
 
+    # Dev
+    clang			# C
+    python3			# Python
+    rustup			# Rust
+    typescript-language-server  # Typescript
+
     # Multimedia
     cmus			# console music player
     freetube			# foss youtube video player
@@ -22,6 +28,7 @@
     mpv				# lightweight video player
 
     # Utility
+    libreoffice-fresh		# foss office suite
     localsend			# foss alternative to airdrop
     mission-center		# gtk app to track system resources
     mousam			# gtk weather app

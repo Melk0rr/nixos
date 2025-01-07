@@ -4,7 +4,7 @@
 {
   # Installing fonts
   fonts.packages = with pkgs; [
-    cantarell
+    cantarell-fonts
     nerd-fonts.caskaydia-mono
     nerd-fonts.dejavu-sans-mono
     nerd-fonts.jetbrains-mono
