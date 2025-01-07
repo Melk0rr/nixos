@@ -7,6 +7,7 @@
     eza				# modern alternative to ls
     fzf				# fuzzy search
     oh-my-posh			# nice looking prompt
+    plocate			# faster locate
     translate-shell		# translation from terminal
     yt-dlp			# youtube content downloader
     zoxide			# modern alternative to cd
@@ -34,5 +35,6 @@
     protonmail-desktop		# proton mail desktop client
     proton-pass			# proton pass desktop client
     qalculate-gtk		# calculator using qalculate
+    qbittorrent
   ]);
 }
