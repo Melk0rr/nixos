@@ -9,7 +9,6 @@
     oh-my-posh			# nice looking prompt
     translate-shell		# translation from terminal
     yt-dlp			# youtube content downloader
-    yazi			# terminal file explorer
     zoxide			# modern alternative to cd
 
     # Dev
