@@ -10,6 +10,7 @@
 {
   imports = [
     ./bootloader.nix
+    ./fonts.nix
     ./hardware.nix
     ./locale.nix
     ./network.nix

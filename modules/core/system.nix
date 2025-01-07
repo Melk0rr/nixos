@@ -24,14 +24,6 @@
     vim
   ];
   
-  # Installing fonts
-  fonts.packages = with pkgs; [
-    nerd-fonts.caskaydia-mono
-    nerd-fonts.dejavu-sans-mono
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.meslo-lg
-  ];
-
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "24.11";
 }
