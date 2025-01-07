@@ -8,7 +8,7 @@
     ./fish.nix
     ./git.nix
     ./kitty.nix
-    ./nvim
+    ./nvim.nix
     ./oh-my-posh
     ./packages.nix
   ];
