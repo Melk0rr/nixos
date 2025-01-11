@@ -19,9 +19,10 @@
   
   # Packages installes system wide
   environment.systemPackages = with pkgs; [
-    wget
     git
+    usbutils
     vim
+    wget
   ];
   
   nixpkgs.config.allowUnfree = true;
