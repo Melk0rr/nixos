@@ -19,10 +19,10 @@ vim.keymap.set('v', '<A-j>', ":m '>+1<cr>gv=gv")
 vim.keymap.set('v', '<A-k>', ":m '<-2<cr>gv=gv")
 
 -- Plugin-specific
---local telescope = require 'telescope.builtin'
+local telescope = require 'telescope.builtin'
 --local nvim_tree = require 'nvim-tree.api'
 
---vim.keymap.set('n', '<leader>f', telescope.find_files, {})
---vim.keymap.set('n', '<leader>st', telescope.live_grep, {})
+vim.keymap.set('n', '<C-p>', telescope.find_files, {})
+vim.keymap.set('n', '<leader>fg', telescope.live_grep, {})
 --vim.keymap.set('n', '<leader>th', telescope.colorscheme, {})
 --vim.keymap.set('n', '<leader>e', nvim_tree.tree.toggle, {})
