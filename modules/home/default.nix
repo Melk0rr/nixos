@@ -7,8 +7,9 @@
     ./fastfetch
     ./fish.nix
     ./git.nix
+    #./hyprland
     ./kitty.nix
-    ./nvim.nix
+    ./nvim
     ./oh-my-posh
     ./packages.nix
     ./yazi
