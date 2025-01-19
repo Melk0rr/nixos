@@ -19,6 +19,11 @@
       preview = {
         cache_dir = "/home/${username}/.cache/yazi";
       };
+
+      plugin.prepend_fetcher = [
+        { id = "git"; name = "*"; run = "git"; }
+        { id = "git"; name = "/"; run = "git"; }
+      ];
     };
 
     keymap = {
