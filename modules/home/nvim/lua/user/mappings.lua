@@ -1,22 +1,27 @@
+local map = vim.api.nvim_set_keymap
+-- Common
+map('', 'Y', 'y$', {})                                      -- 'Y' to yank the whole line
+map('n', '<leader;', 'mqA;<esc>`q', {})                     -- put semicolon at the end of the line
+
 -- Window navigation
-vim.keymap.set('n', '<C-h>', '<C-w>h', {})
-vim.keymap.set('n', '<C-j>', '<C-w>j', {})
-vim.keymap.set('n', '<C-k>', '<C-w>k', {})
-vim.keymap.set('n', '<C-l>', '<C-w>l', {})
-vim.keymap.set('t', '<C-h>', [[<C-\><C-n><C-w>h]], {})
-vim.keymap.set('t', '<C-j>', [[<C-\><C-n><C-w>j]], {})
-vim.keymap.set('t', '<C-k>', [[<C-\><C-n><C-w>k]], {})
-vim.keymap.set('t', '<C-l>', [[<C-\><C-n><C-w>l]], {})
+map('n', '<C-h>', '<C-w>h', {})
+map('n', '<C-j>', '<C-w>j', {})
+map('n', '<C-k>', '<C-w>k', {})
+map('n', '<C-l>', '<C-w>l', {})
+map('t', '<C-h>', [[<C-\><C-n><C-w>h]], {})
+map('t', '<C-j>', [[<C-\><C-n><C-w>j]], {})
+map('t', '<C-k>', [[<C-\><C-n><C-w>k]], {})
+map('t', '<C-l>', [[<C-\><C-n><C-w>l]], {})
 
 -- Buffer navigation
-vim.keymap.set('n', '<Tab>', '<cmd>bnext<cr>', {})
-vim.keymap.set('n', '<S-Tab>', '<cmd>bprevious<cr>', {})
+map('n', '<Tab>', '<cmd>bnext<cr>', {})
+map('n', '<S-Tab>', '<cmd>bprevious<cr>', {})
 
 -- Move lines
-vim.keymap.set('n', '<A-j>', ':m .+1<cr>==')
-vim.keymap.set('n', '<A-k>', ':m .-2<cr>==')
-vim.keymap.set('v', '<A-j>', ":m '>+1<cr>gv=gv")
-vim.keymap.set('v', '<A-k>', ":m '<-2<cr>gv=gv")
+map('n', '<A-j>', ':m .+1<cr>==', {})
+map('n', '<A-k>', ':m .-2<cr>==', {})
+map('v', '<A-j>', ":m '>+1<cr>gv=gv", {})
+map('v', '<A-k>', ":m '<-2<cr>gv=gv", {})
 
 -- Plugin-specific
 local telescope = require 'telescope.builtin'
@@ -24,5 +29,5 @@ local telescope = require 'telescope.builtin'
 
 vim.keymap.set('n', '<C-p>', telescope.find_files, {})
 vim.keymap.set('n', '<leader>fg', telescope.live_grep, {})
---vim.keymap.set('n', '<leader>th', telescope.colorscheme, {})
---vim.keymap.set('n', '<leader>e', nvim_tree.tree.toggle, {})
+--map('n', '<leader>th', telescope.colorscheme, {})
+--map('n', '<leader>e', nvim_tree.tree.toggle, {})
