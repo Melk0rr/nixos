@@ -6,5 +6,6 @@ return {
   require("user.plugins.lspconfig"),
   require("user.plugins.neotree"),
   require("user.plugins.telescope"),
+  require("user.plugins.toggleterm"),
   require("user.plugins.treesitter"),
 }
