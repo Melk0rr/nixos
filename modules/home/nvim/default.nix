@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 # Neovim configuration
 {
   programs.neovim = {
@@ -9,10 +10,13 @@
     '';
     extraPackages = with pkgs; [
       # Language server packages (executables)
+      bash-language-server                  # Bash
       ccls                                  # C/C++
-      sumneko-lua-language-server           # Lua
-      rust-analyzer                         # Rust
+      fish-lsp                              # Fish
+      nil                                   # Nix
       pyright                               # Python
+      rust-analyzer                         # Rust
+      sumneko-lua-language-server           # Lua
     ];
   };
 }

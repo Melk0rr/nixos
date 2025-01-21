@@ -12,17 +12,16 @@ return {
                 },
             },
         }
+        lspconfig.bashls.setup {}
         lspconfig.pylsp.setup {}
         lspconfig.wgsl_analyzer.setup {}
         lspconfig.asm_lsp.setup {}
         lspconfig.clangd.setup {}
         lspconfig.jdtls.setup {}
         lspconfig.nil_ls.setup {}
-        lspconfig.rust_analyzer.setup { on_attach = on_attach }
-        lspconfig.rnix.setup {}
+        lspconfig.rust_analyzer.setup {}
         lspconfig.ts_ls.setup {}
         lspconfig.volar.setup {}
-        lspconfig.biome.setup {}
 
         lspconfig.lua_ls.setup {
           on_init = function(client)
