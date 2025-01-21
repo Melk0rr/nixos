@@ -25,9 +25,8 @@ map('v', '<A-k>', ":m '<-2<cr>gv=gv", {})
 
 -- Plugin-specific
 local telescope = require 'telescope.builtin'
---local nvim_tree = require 'nvim-tree.api'
-
 vim.keymap.set('n', '<C-p>', telescope.find_files, {})
 vim.keymap.set('n', '<leader>fg', telescope.live_grep, {})
---map('n', '<leader>th', telescope.colorscheme, {})
---map('n', '<leader>e', nvim_tree.tree.toggle, {})
+
+-- neo-tree
+vim.keymap.set('n', '<leader>e', '<cmd>Neotree toggle<cr>', {})
