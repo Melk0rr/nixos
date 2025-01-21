@@ -1,6 +1,7 @@
 local map = vim.api.nvim_set_keymap
 -- Common
 map('', 'Y', 'y$', {})                                      -- 'Y' to yank the whole line
+map('i', 'kj', '<esc>', {})                                 -- kj to exit insert mode
 map('n', '<leader;', 'mqA;<esc>`q', {})                     -- put semicolon at the end of the line
 
 -- Window navigation
