@@ -22,7 +22,7 @@ map('t', '<C-l>', [[<C-\><C-n><C-w>l]], opts)
 -- Buffer navigation
 map('n', '<Tab>', '<cmd>bnext<cr>', opts)
 map('n', '<S-Tab>', '<cmd>bprevious<cr>', opts)
---
+
 -- Stay in indent mode
 map('v', '<', '<gv^', opts)
 map('v', '>', '>gv^', opts)
@@ -34,6 +34,7 @@ map('v', '<A-j>', ":m '>+1<cr>gv=gv", opts)
 map('v', '<A-k>', ":m '<-2<cr>gv=gv", opts)
 
 -- Plugin-specific
+-- telescope
 local telescope = require 'telescope.builtin'
 map('n', '<C-p>', telescope.find_files, opts)
 map('n', '<leader>fg', telescope.live_grep, opts)

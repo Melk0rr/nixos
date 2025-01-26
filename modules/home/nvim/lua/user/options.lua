@@ -1,25 +1,45 @@
--- Indenting
-vim.o.expandtab = true
-vim.o.shiftwidth = 2
-vim.o.softtabstop = 2
-vim.o.tabstop = 2
+-- Tabulation
+vim.opt.expandtab = true		          -- tab to space
+vim.opt.tabstop = 2			              -- tab size
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
 vim.opt.smarttab = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
+vim.opt.smartcase = true
 
 -- Line
-vim.o.cursorline = true
-vim.o.number = true
-vim.o.signcolumn = 'no'
+vim.opt.cursorline = true
+vim.opt.number = true 			          -- line number
+vim.opt.fillchars = { eob = ' ' }
 
--- Undo
-vim.o.undofile = true
-vim.o.undodir = vim.fn.expand "~/.cache/nvim/undo"
+-- Split
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+
+-- File search
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.hlsearch = true
+vim.opt.incsearch = true
+
+-- Status
+vim.opt.laststatus = 2
+vim.opt.showcmd = true
+vim.opt.showmode = false
+
+vim.opt.ch = 0
+
+-- Term
+vim.g.terminal_emulator = "kitty"
+
+-- Term colors
+vim.cmd "colorscheme vim" 		        -- color scheme
+--vim.cmd "set background=dark"
+vim.opt.termguicolors = true
 
 -- Miscellaneous
-vim.g.mapleader = ' '
-vim.o.pumheight = 40
-vim.opt.clipboard = 'unnamedplus'
-vim.opt.fillchars = { eob = ' ' }
-vim.opt.termguicolors = true
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+vim.opt.pumheight = 40
 vim.lsp.inlay_hint.enable(true)
