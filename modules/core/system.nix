@@ -20,6 +20,7 @@
   # Packages installes system wide
   environment.systemPackages = with pkgs; [
     git
+    unzip
     usbutils
     vim
     wget
