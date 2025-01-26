@@ -4,38 +4,40 @@
 {
   home.packages = (with pkgs; [
     # Shell
-    eza				# modern alternative to ls
-    fzf				# fuzzy search
-    oh-my-posh			# nice looking prompt
-    plocate			# faster locate
-    translate-shell		# translation from terminal
-    yt-dlp			# youtube content downloader
-    zoxide			# modern alternative to cd
+    eza				                  # modern alternative to ls
+    fzf				                  # fuzzy search
+    oh-my-posh			            # nice looking prompt
+    plocate			                # faster locate
+    translate-shell		          # translation from terminal
+    yt-dlp			                # youtube content downloader
+    zoxide			                # modern alternative to cd
 
     # Dev
-    clang			# C
-    pipx			# to install isolated python apps
-    python3			# Python
-    rustup			# Rust
+    clang			                  # C
+    go                          # Go
+    pipx			                  # to install isolated python apps
+    python3			                # Python
+    rustup			                # Rust
     typescript-language-server  # Typescript
 
     # Multimedia
-    cmus			# console music player
-    freetube			# foss youtube video player
-    imv				# lightweight image viewer
-    inkscape			# image and svg editor
-    krita			# foss drawing app
-    lollypop			# music player and library
-    mpv				# lightweight video player
+    cmus			                  # console music player
+    freetube			              # foss youtube video player
+    imv				                  # lightweight image viewer
+    inkscape			              # image and svg editor
+    krita			                  # foss drawing app
+    lollypop			              # music player and library
+    mpv				                  # lightweight video player
 
-    # Utility
-    libreoffice-fresh		# foss office suite
-    localsend			# foss alternative to airdrop
-    mission-center		# gtk app to track system resources
-    mousam			# gtk weather app
-    protonmail-desktop		# proton mail desktop client
-    proton-pass			# proton pass desktop client
-    qalculate-gtk		# calculator using qalculate
-    qbittorrent
+    # Desktop
+    libreoffice-fresh		        # foss office suite
+    localsend			              # foss alternative to airdrop
+    mission-center		          # gtk app to track system resources
+    mousam			                # gtk weather app
+    protonmail-desktop		      # proton mail desktop client
+    proton-pass			            # proton pass desktop client
+    qalculate-gtk		            # calculator using qalculate
+    qbittorrent                 # torrent download application
+    stellarium                  # astronomy app
   ]);
 }
