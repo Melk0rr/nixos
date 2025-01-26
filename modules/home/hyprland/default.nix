@@ -14,6 +14,9 @@
 
     # Wallpaper
     swww
+
+    # Session
+    wlogout
   ]);
 
   # Hyprland config
