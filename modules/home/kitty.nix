@@ -18,6 +18,11 @@
       window_padding_width = 15;
     };
 
+    extraConfig = ''
+      modify_font underline_position 4
+      modify_font underline_thickness 170%
+    '';
+
     keybindings = {
       # Scroll
       "ctrl+shift+up" = "scroll_line_up";
