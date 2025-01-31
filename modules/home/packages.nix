@@ -15,6 +15,7 @@
     # Dev
     clang			                  # C
     go                          # Go
+    nodejs                      # Node.js
     pipx			                  # to install isolated python apps
     python3			                # Python
     rustup			                # Rust
