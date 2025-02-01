@@ -6,6 +6,7 @@
     # Shell
     eza				                  # modern alternative to ls
     fzf				                  # fuzzy search
+    lazygit                     # tui for git commands
     oh-my-posh			            # nice looking prompt
     plocate			                # faster locate
     translate-shell		          # translation from terminal
@@ -19,7 +20,6 @@
     pipx			                  # to install isolated python apps
     python3			                # Python
     rustup			                # Rust
-    typescript-language-server  # Typescript
 
     # Multimedia
     cmus			                  # console music player
