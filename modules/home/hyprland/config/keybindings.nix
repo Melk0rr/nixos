@@ -58,6 +58,22 @@
       "$mainMod CTRL, P, frozen screen / drag screenshot, exec, screenshot sf"
       "$mainMod ALT, P, Print focused monitor, exec, screenshot m"
       ",print, Take a screenshot of all monitor, exec, screenshot p"
+
+      # Move active window to a workspace with mainMod + SHIFT + [0-9]
+      "$mainMod SHIFT, ampersand, Move to workspace 1, movetoworkspace, 1"
+      "$mainMod SHIFT, eacute, Move to workspace 2, movetoworkspace, 2"
+      "$mainMod SHIFT, quotedbl, Move to workspace 3, movetoworkspace, 3"
+      "$mainMod SHIFT, apostrophe, Move to workspace 4, movetoworkspace, 4"
+      "$mainMod SHIFT, parenleft, Move to workspace 5, movetoworkspace, 5"
+      "$mainMod SHIFT, minus, Move to workspace 6, movetoworkspace, 6"
+      "$mainMod SHIFT, egrave, Move to workspace 7, movetoworkspace, 7"
+      "$mainMod SHIFT, underscore, Move to workspace 8, movetoworkspace, 8"
+      "$mainMod SHIFT, ccedilla, Move to workspace 9, movetoworkspace, 9"
+      "$mainMod SHIFT, agrave, Move to workspace 10, movetoworkspace, 10"
+
+      # Move active window to a relative workspace with mainMod + CTRL + ALT + [←→]
+      "$mainMod CTRL ALT, right, Move to relative next workspace, movetoworkspace, r+1"
+      "$mainMod CTRL ALT, left, Move to relative previous workspace, movetoworkspace, r-1"
     };
 
     # Bindings with description and working with an input inhibitor (e.g. lockscreen)
@@ -76,6 +92,15 @@
       "$mainMod, F11, Decrease brightness, exec, brightnesscontrol d"
       "$mainMod, F12, Increase brightness, exec, brightnesscontrol i"
     };
+
+    # Bindings with description, will repeat when held
+    bindde = {
+      # Resize windows
+      "$mainMod SHIFT, right, Increase window width, resizeactive, 30 0"
+      "$mainMod SHIFT, left, Decrease window width, resizeactive, -30 0"
+      "$mainMod SHIFT, up, Decrease window height, resizeactive, 0 -30"
+      "$mainMod SHIFT, down, Increase window height, resizeactive, 0 30"
+    }
 
     # Bindings with description, working with input inhibitor and will repeat when held
     binddel = {
