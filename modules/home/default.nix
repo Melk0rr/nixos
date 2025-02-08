@@ -1,9 +1,10 @@
-{ inputs, username, hostname, ... }:
+{ ... }:
 
 # Default home module
 {
   imports = [
     ./browser.nix
+    ./catppuccin.nix
     ./fastfetch
     ./fish.nix
     ./git.nix
