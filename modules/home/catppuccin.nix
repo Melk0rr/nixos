@@ -4,7 +4,7 @@
 {
   home.packages = (
     with pkgs; [ catppuccin ]
-  )
+  );
 
   gtk = {
     enable = true;
