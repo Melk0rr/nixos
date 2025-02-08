@@ -1,5 +1,5 @@
 {
-  wayland.windowManager.hyprland.settings.env = {
+  wayland.windowManager.hyprland.settings.env = [
     "PATH,$PATH:$scrDir"
     "GPG_TTY,tty"
     "XDG_CURRENT_DESKTOP,Hyprland"
@@ -17,5 +17,5 @@
     "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
     "QT_AUTO_SCREEN_SCALE_FACTOR,1"
     "QT_STYLE_OVERRIDE,kvantum"
-  };
+  ];
 }
