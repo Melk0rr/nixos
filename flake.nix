@@ -6,8 +6,8 @@
     
     # Home-manager
     home-manager = {
-        url = "github:nix-community/home-manager";
-	inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     
     # Hyprland
@@ -29,11 +29,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    catppuccin.url = "github:catppuccin/nix";
+
     # Zen browser
     zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, catppuccin, ... }@inputs:
   let
     system = "x86_64-linux";
     username = "me1k0r";
