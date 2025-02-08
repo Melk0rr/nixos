@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 # Kitty config
 {
