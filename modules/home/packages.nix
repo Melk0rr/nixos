@@ -20,6 +20,7 @@
     pipx			                  # to install isolated python apps
     python3			                # Python
     rustup			                # Rust
+    nil                         # NixOS language server
 
     # Multimedia
     cmus			                  # console music player
