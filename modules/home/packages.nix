@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 
 # Packages to install
 {
@@ -19,6 +19,8 @@
     nodejs                      # Node.js
     pipx			                  # to install isolated python apps
     python3			                # Python
+    ripgrep                     # For livegrep
+    ripgrep-all                 # For livegrep
     rustup			                # Rust
     nil                         # NixOS language server
 
