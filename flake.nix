@@ -43,12 +43,13 @@
       config.allowUnfree = true;
     };
 
+    lib = nixpkgs.lib;
     inherit (self) outputs;
   in {
     # Nixos configuration
     # nixos-rebuild switch --flake .#hostname
     nixosConfigurations = {
-      onyx = pkgs.lib.nixosSystem {
+      onyx = lib.nixosSystem {
         specialArgs = {
           hostname = "onyx";
           inherit system inputs username outputs;
