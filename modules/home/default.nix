@@ -4,10 +4,10 @@
 {
   imports = [
     ./browser.nix
-    ./catppuccin.nix
     ./fastfetch
     ./fish.nix
     ./git.nix
+    ./gtk.nix
     #./hyprland
     ./kitty.nix
     ./nvim
