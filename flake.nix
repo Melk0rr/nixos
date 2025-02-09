@@ -29,13 +29,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    catppuccin.url = "github:catppuccin/nix";
-
     # Zen browser
     zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
-  outputs = { self, nixpkgs, home-manager, catppuccin, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
   let
     system = "x86_64-linux";
     username = "me1k0r";
@@ -50,7 +48,7 @@
     # Nixos configuration
     # nixos-rebuild switch --flake .#hostname
     nixosConfigurations = {
-      onyx = nixpkgs.lib.nixosSystem {
+      onyx = pkgs.lib.nixosSystem {
         specialArgs = {
           hostname = "onyx";
           inherit system inputs username outputs;
