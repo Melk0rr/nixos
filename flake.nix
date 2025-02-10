@@ -23,6 +23,9 @@
     hyprpicker.url = "github:hyprwm/hyprpicker";
     iio-hyprland.url = "github:JeanSchoeller/iio-hyprland";
 
+    # Catppuccin
+    catppuccin.url = "github:catppuccin/nix";
+
     # Spicetify
     spicetify-nix = {
       url = "github:gerg-l/spicetify-nix";
@@ -56,6 +59,7 @@
         };
         modules = [
           ./hosts/onyx
+          inputs.catppuccin.nixosModules.catppuccin
         ];
       };
     };

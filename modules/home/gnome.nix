@@ -17,5 +17,8 @@
       show-line-numbers = true;
       wrap-text = false;
     };
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+    };
   };
 }
