@@ -15,7 +15,10 @@
     users.${username} = {
       imports =
         if (hostname == "onyx") then
-          [ ./../home/default.onyx.nix ]
+          [
+            ./../home/default.onyx.nix
+            inputs.catppuccin.homeManagerModules.catppuccin
+          ]
         else
           [ ./../home ];
 
