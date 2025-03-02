@@ -53,7 +53,7 @@ return {
     lspconfig.jsonls.setup({ on_attach = on_attach, capabilities = capabilities })
 
     -- INFO: Nix
-    -- lspconfig.nil_ls.setup({ on_attach = on_attach, capabilities = capabilities })
+    lspconfig.nil_ls.setup({ on_attach = on_attach, capabilities = capabilities })
 
     -- INFO: Hyprlang
     lspconfig.hyprls.setup({ on_attach = on_attach, capabilities = capabilities })
