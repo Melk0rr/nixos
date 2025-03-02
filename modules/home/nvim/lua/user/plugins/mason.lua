@@ -2,6 +2,7 @@ return {
   "williamboman/mason.nvim",
   dependencies = { "williamboman/mason-lspconfig.nvim" },
   config = function()
+    -- INFO: servers to install
     local servers = {
       "bashls",
       "clangd",
@@ -17,7 +18,7 @@ return {
       "rust_analyzer",
     }
 
-    -- Mason setup
+    -- INFO: Mason setup
     require("mason").setup({
       ui = {
         icons = {
@@ -28,10 +29,11 @@ return {
       }
     })
 
-    -- Mason lsp setup
+    -- INFO: Mason lsp setup
     require("mason-lspconfig").setup({
       ensure_installed = servers,
       automatic_installation = true,
     })
   end
 }
+
