@@ -1,4 +1,4 @@
-{ config, pkgs, hostname, ... }:
+{ pkgs, hostname, ... }:
 
 # Fish config
 {
@@ -13,6 +13,17 @@
       set -gx TERMINAL "kitty"
  
       oh-my-posh init fish | source
+
+      # Set cursor style
+      set fish_cursor_default block blink
+      set fish_cursor_insert  line  blink
+      set fish_cursor_visual  block
+      set fish_vi_force_cursor 1
+
+      function fish_user_key_bindings
+        fish_default_key_bindings -M insert
+        fish_vi_key_bindings --no-erase insert
+      end
 
       function backup-file --argument filename
         sudo cp $filename $filename.bak
