@@ -6,6 +6,7 @@
     ./browser.nix
     ./fastfetch
     ./fish.nix
+    ./ghostty
     ./git.nix
     ./gtk.nix
     #./hyprland
