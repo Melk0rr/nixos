@@ -78,13 +78,13 @@
           "trailing_diamond": "\ue0b4",
           "template": "<transparent> \uf12a</> {{ .Meaning }} ",
           "background": "#910000",
-          "type": "exit",
+          "type": "status",
           "style": "diamond"
         }
       ]
     },
     {
-      "type": "prompt",
+      "type": "rprompt",
       "alignment": "right",
       "segments": [
         {
@@ -126,7 +126,7 @@
           },
           "template": "\n❯ ",
           "foreground": "#fff",
-          "type": "exit",
+          "type": "text",
           "style": "plain",
           "foreground_templates": [
             "{{ if gt .Code 0 }}#ff0000{{ end }}"
