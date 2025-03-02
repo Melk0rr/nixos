@@ -3,7 +3,7 @@
 # Ghostty config 
 {
   programs.ghostty = {
-    enabled = true;
+    enable = true;
     enableFishIntegration = true;
     settings = {
       # Fonts
