@@ -10,7 +10,6 @@
     ./git.nix
     ./gtk.nix
     #./hyprland
-    ./kitty.nix
     ./nvim
     ./oh-my-posh
     ./packages.nix
