@@ -5,12 +5,13 @@
   programs.ghostty = {
     enable = true;
     enableFishIntegration = true;
+    installVimSyntax = true;
     settings = {
       # Fonts
       font-family = "JetBrains Mono Nerd Font";
       font-size = 12;
       adjust-underline-position = 4;
-      adjust-underline-thickness = "130%";
+      adjust-underline-thickness = "120%";
       theme = "catppuccin-mocha";
 
       # Padding
@@ -23,10 +24,11 @@
       # Tabs
       gtk-wide-tabs = false;
       gtk-tabs-location = "bottom";
-      gtk-custom-css = "tab-style.css";
+      gtk-custom-css = [
+        "tab-style.css"
+      ];
 
       keybind = [
-        # Split navigation
         "shift+ctrl+h=new_split:left"
         "shift+ctrl+l=new_split:right"
         "shift+ctrl+k=new_split:up"
