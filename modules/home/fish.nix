@@ -10,7 +10,7 @@
       fish_vi_key_bindings
 
       set -gx EDITOR "nvim"
-      set -gx TERMINAL "kitty"
+      set -gx TERMINAL "ghostty"
  
       oh-my-posh init fish | source
 
