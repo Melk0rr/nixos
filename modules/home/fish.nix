@@ -5,6 +5,12 @@
   programs.fish = {
     enable = true;
 
+    plugins = [
+      { name = "autopair"; src = pkgs.fishPlugins.autopair.src; }
+      { name = "fzf"; src = pkgs.fishPlugins.fzf-fish.src; }
+      { name = "pure"; src = pkgs.fishPlugins.pure.src; }
+    ];
+
     # Interactive shell
     interactiveShellInit = ''
       fish_vi_key_bindings
@@ -35,7 +41,8 @@
       # Nix
       nix-switch = "sudo nixos-rebuild switch --flake ~/nixos-config#${hostname}";
       nix-switchu = "sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#${hostname}";
-      nix-flake-update = "sudo nix flake update ~/nixos-config#";
+      nix-switchfu = "sudo nix flake update --flake ~/nixos-config# && sudo nixos-rebuild switch --upgrade --flake ~/nixos-config#${hostname}";
+      nix-flake-update = "sudo nix flake update --flake ~/nixos-config#";
       nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage -d";
 
       # System
@@ -91,10 +98,4 @@
       "--cmd cd"
     ];
   };
-
-  home.packages = (with pkgs; [
-    fishPlugins.autopair
-    fishPlugins.fzf-fish
-    fishPlugins.pure
-  ]);
 }
