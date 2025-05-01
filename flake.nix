@@ -33,7 +33,7 @@
     };
 
     # Zen browser
-    zen-browser.url = "github:MarceColl/zen-browser-flake";
+    zen-browser.url = "github:youwen5/zen-browser-flake";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:

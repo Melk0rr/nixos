@@ -1,3 +1,4 @@
-[submodule "nvim"]
-  path = ./modules/home/nvim
-  url = https://github.com/Melk0rr/nvim.git
+[submodule "modules/home/nvim"]
+	path = modules/home/nvim
+	url = git@github.com:Melk0rr/nvim.git
+	branch = nixos
