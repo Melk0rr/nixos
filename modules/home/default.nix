@@ -9,7 +9,7 @@
     ./ghostty
     ./git.nix
     ./gtk.nix
-    ./hyprland
+    # ./hyprland
     ./nvim
     ./oh-my-posh
     ./packages.nix
