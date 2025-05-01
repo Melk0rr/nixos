@@ -42,6 +42,5 @@
     proton-pass			            # proton pass desktop client
     qalculate-gtk		            # calculator using qalculate
     qbittorrent                 # torrent download application
-    stellarium                  # astronomy app
   ]);
 }
