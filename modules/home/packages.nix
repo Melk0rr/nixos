@@ -38,9 +38,11 @@
     localsend			              # foss alternative to airdrop
     mission-center		          # gtk app to track system resources
     mousam			                # gtk weather app
+    papers                      # document viewer
     protonmail-desktop		      # proton mail desktop client
     proton-pass			            # proton pass desktop client
     qalculate-gtk		            # calculator using qalculate
     qbittorrent                 # torrent download application
+    simplex-chat-desktop        # foss private messaging
   ]);
 }
