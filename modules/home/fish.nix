@@ -11,12 +11,12 @@
       { name = "pure"; src = pkgs.fishPlugins.pure.src; }
     ];
 
-    # Interactive shell
+    # NOTE: Interactive shell
     interactiveShellInit = ''
       fish_vi_key_bindings
 
       set -gx EDITOR "nvim"
-      set -gx TERMINAL "kitty"
+      set -gx TERMINAL "ghostty"
  
       oh-my-posh init fish | source
 
@@ -34,9 +34,24 @@
       function backup-file --argument filename
         sudo cp $filename $filename.bak
       end
+
+      # Grep color
+      function grep; grep --color $argv; end
+
+      # Plocate
+      function locate; plocate $argv; end
+
+      # LS
+      function ls; eza -la --color=always --group-directories-first --icons $argv; end
+      function la; eza -a --color=always --group-directories-first --icons $argv; end
+      function ll; eza -l --color=always --group-directories-first --icons $argv; end
+      function lt; eza -aT --color=always --group-directories-first --icons $argv; end
+
+      # Dev
+      function py; python3 $argv; end
     '';
     
-    # Abbr
+    # NOTE: Abbr
     shellAbbrs = {
       # Nix
       nix-switch = "sudo nixos-rebuild switch --flake ~/nixos-config#${hostname}";
@@ -45,11 +60,23 @@
       nix-flake-update = "sudo nix flake update --flake ~/nixos-config#";
       nix-clean = "sudo nix-collect-garbage && sudo nix-collect-garbage -d && sudo rm /nix/var/nix/gcroots/auto/* && nix-collect-garbage -d";
 
-      # System
-      ff = "fastfetch";
+      # Processes and journals
+      ffe = "fastfetch";
       psa = "ps auxf";
+      psmem = "ps auxf | sort -nr -k 4";
+      pscpu = "ps auxf | sort -nr -k 3";
+      jctl = "journalctl -p 3 -xb";
+      lsblk = "lsblk -o +uuid,name";
+
+      # Patching
+      patch-file = "diff -Naru";
+      patch-dir = "diff -crB";
+
+      # DNS
+      dnstls-opt = "sudo sed -i '/^DNSOverTLS=/c\DNSOverTLS=opportunistic' /etc/systemd/resolved.conf; sudo systemctl restart systemd-resolved";
+      dnstls-yes = "sudo sed -i '/^DNSOverTLS=/c\DNSOverTLS=yes' /etc/systemd/resolved.conf; sudo systemctl restart systemd-resolved";
       
-      # Git abbrs
+      # Git & dev
       gin = "git init";
       gcl = "git clone";
       gcm = "git commit -m";
@@ -66,29 +93,17 @@
       gb = "git branch";
       gre = "git rebase";
 
-      # Yt-dlp
+      # yt-dlp
       ytdl = "yt-dlp --output '%(title)s.%(ext)s'";
       ytdlp = "yt-dlp --audio-format mp3 -i --output '%(playlist_index)s-%(title)s.%(ext)s'";
       ytdla = "yt-dlp --audio-format mp3 -i -x -f bestaudio/best --output '%(playlist_index)s-%(title)s.%(ext)s'";
+
+      # Rclone
+      rcc = "rclone copy";
     };
 
-    # Aliases
-    shellAliases = {
-      # Grep
-      grep = "grep --color";
-
-      # Eza
-      ls = "eza -la --color=always --group-directories-first --icons";
-      la = "eza -a --color=always --group-directories-first --icons";
-      ll = "eza -l --color=always --group-directories-first --icons";
-      lt = "eza -aT --color=always --group-directories-first --icons";
-
-      # Locate
-      locate = "plocate";
-
-      # Python
-      py = "python3";
-    };
+    # NOTE: Aliases
+    shellAliases = {};
   };
 
   programs.zoxide = {
