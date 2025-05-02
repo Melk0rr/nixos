@@ -32,6 +32,7 @@
     krita			                  # foss drawing app
     lollypop			              # music player and library
     mpv				                  # lightweight video player
+    upscayl                     # foss AI image upscaler
 
     # Desktop
     libreoffice-fresh		        # foss office suite
