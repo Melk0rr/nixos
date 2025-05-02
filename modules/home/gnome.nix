@@ -4,7 +4,6 @@
   home.packages = (
     with pkgs;
     [
-      evince
       file-roller
       
       # GNOME extension for screen auto rotate
