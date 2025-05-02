@@ -5,7 +5,7 @@
   programs.yazi = {
     enable = true;
     enableFishIntegration = true;
-    initLua = ./init.lua;
+    initLua = ./main.lua;
     settings = {
       manager = {
         sort_by = "natural";
@@ -33,6 +33,8 @@
     };
 
     plugins = {
+      full-border = ./plugins/full-border.yazi;
+      git = ./plugins/git.yazi;
       smart-enter = ./plugins/smart-enter.yazi;
     };
   };
