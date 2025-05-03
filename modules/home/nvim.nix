@@ -3,7 +3,6 @@
 {
   programs.neovim = {
     enable = true;
-    flake = false;
     defaultEditor = true;
     vimAlias = true;
     extraLuaConfig = ''
