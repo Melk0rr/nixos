@@ -17,7 +17,7 @@
         if (hostname == "onyx") then
           [
             ./../home/default.onyx.nix
-            inputs.catppuccin.homeManagerModules.catppuccin
+            inputs.catppuccin.homeModules.catppuccin
           ]
         else
           [ ./../home ];
