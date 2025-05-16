@@ -33,6 +33,7 @@
     lollypop			              # music player and library
     mpv				                  # lightweight video player
     upscayl                     # foss AI image upscaler
+    webcord                     # discord privacy fron-end
 
     # Desktop
     libreoffice-fresh		        # foss office suite
